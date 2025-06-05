@@ -4,25 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register for TechCon 2024</title>
-    
-  <style>
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #003366;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <!--<style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #003366;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #002244;
+        }
+    </style>-->
 </head>
 <body>
     <header>
@@ -34,48 +63,30 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    
+    <main>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-  <main>
-    <h2>Get in Touch</h2>
-    <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <div class="social-links">
-      <p>Follow us on:</p>
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://facebook.com" target="_blank">Facebook</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-    <div class="map">
-      <h3>Conference Location</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086540346536!2d-122.41941568468184!3d37.77492927975892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c5a7e1c8f%3A0x264d7994c5c8c888!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1601580841389!5m2!1sen!2sus" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
 
-    <h3>Contact Us Form</h3>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the Terms and Conditions
+            </label>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 TechCon. All rights reserved.</p>
-  </footer>
-
- 
+            <button type="submit">Register Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved. Copyright.</p>
+    </footer>
 </body>
 </html>
